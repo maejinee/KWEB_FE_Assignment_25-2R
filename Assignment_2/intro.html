@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> introduction form </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="intro.css">
+    </head>
+    <body>
+        <form class="parent">
+            <div class="child">
+                <h3 for="name"> 1. 이름을 작성해주세요. </h3> 
+                <input type="text" id="name" name="username"/>
+            </div>
+            
+            <div class="child">
+                <h3 for="student_id"> 2. 학번을 작성해주세요. </h3> 
+                <input type="text" id="student_id" name="Student_id"/>
+            </div>
+
+            <div class="child">
+                <h3> 3. 현재 회원 등급을 선택해주세요. </h3> 
+                <input type="radio" id="joon" name="level"/> 
+                <label for="joon"> 준회원 </label>
+                <input type="radio" id="jeong" name="level"/> 
+                <label for="jeong"> 정회원 </label>
+                <input type="radio" id="hyu" name="level"/> 
+                <label for="hyu"> 휴회원 </label>
+            </div>
+            
+            <div class="child">
+                <h3> 4. 본인이 관심있는 분야를 모두 선택해주세요 </h3> 
+                <input type="checkbox" id="front" name="interest"/> 
+                <label for="front"> 프론트엔드 프로그래밍 </label>
+                <input type="checkbox" id="back" name="interest"/> 
+                <label for="back"> 벡엔드 프로그래밍 </label>
+                <input type="checkbox" id="crawl" name="interest"/> 
+                <label for="crawl"> 웹 크롤링 </label>
+                <input type="checkbox" id="sec" name="interest"/> 
+                <label for="sec"> 웹 보안 </label>
+                <input type="checkbox" id="others_check" name="interest"/> 
+                <label for="others_check"> 기타 </label>
+                <input type="text" id="others_text" name="interest_other" placeholder="기타 항목을 입력하세요. "/> 
+            </div>
+
+            <div class="child">
+                <h3 for="feedback"> 5. 2025년 가을학기 KWEB 스터디에 대한 전반적인 평가와 피드백을 작성해주세요.  </h3> 
+                <textarea id="feedback" name="feedback"> </textarea>
+            </div>
+
+            <button type="submit"> 제출 </button>
+        </form>
+    </body>
+</html>
