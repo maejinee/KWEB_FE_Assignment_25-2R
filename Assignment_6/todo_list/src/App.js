@@ -23,7 +23,7 @@ function App() {
   }
   
   const HandleEnterAdd = (e) => {
-    if (e.key == 'Enter' && input) {
+    if (e.key === 'Enter' && input) {
       setList((prevState) => {
         return [...prevState, input]; 
       })
